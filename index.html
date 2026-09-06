@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sri Sathya Sai School | Metturu</title>
+
+  <meta name="description"
+    content="Sri Sathya Sai School, Metturu - Education, Values and Excellence.">
+
+  <style>
+
+    /* =========================================
+       SRI SATHYA SAI SCHOOL - WEBSITE
+       ========================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* =========================================
+       TOP HEADER
+       ========================================= */
+
+    header {
+      background: #7b0000;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-placeholder {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #7b0000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+      border: 3px solid #d4af37;
+    }
+
+    .brand h1 {
+      font-size: 19px;
+      line-height: 1.2;
+    }
+
+    .brand p {
+      font-size: 11px;
+      color: #f5d98b;
+      margin-top: 3px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd966;
+    }
+
+    .menu-button {
+      display: none;
+      font-size: 25px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: white;
+    }
+
+
+    /* =========================================
+       HERO SECTION
+       ========================================= */
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 80px 20px;
+
+      background:
+        linear-gradient(
+          rgba(70,0,0,0.82),
+          rgba(25,0,0,0.75)
+        ),
+        linear-gradient(135deg,#7b0000,#b8860b);
+    }
+
+    .hero-content {
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .hero-small {
+      font-size: 16px;
+      letter-spacing: 2px;
+      color: #ffd966;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-size: 58px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero-location {
+      font-size: 19px;
+      margin-bottom: 20px;
+      color: #f3f3f3;
+    }
+
+    .hero-motto {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffd966;
+      margin-bottom: 25px;
+    }
+
+    .hero-description {
+      font-size: 18px;
+      max-width: 750px;
+      margin: auto;
+      margin-bottom: 35px;
+    }
+
+
+    /* =========================================
+       BUTTONS
+       ========================================= */
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 26px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+
+    .btn-primary {
+      background: #d4af37;
+      color: #3b0000;
+    }
+
+    .btn-primary:hover {
+      background: #ffe082;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #7b0000;
+    }
+
+    .btn-secondary:hover {
+      background: #eeeeee;
+      transform: translateY(-2px);
+    }
+
+
+    /* =========================================
+       GENERAL SECTIONS
+       ========================================= */
+
+    section {
+      padding: 75px 20px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #7b0000;
+      font-size: 34px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      max-width: 750px;
+      margin: auto;
+      color: #666;
+      margin-bottom: 45px;
+      font-size: 17px;
+    }
+
+
+    /* =========================================
+       WELCOME
+       ========================================= */
+
+    .welcome {
+      background: #fffaf0;
+    }
+
+    .welcome-text {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+      color: #444;
+    }
+
+
+    /* =========================================
+       VALUE CARDS
+       ========================================= */
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 25px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
+      border-bottom: 4px solid #d4af37;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card-icon {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #7b0000;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666;
+    }
+
+
+    /* =========================================
+       ABOUT
+       ========================================= */
+
+    .about {
+      background: white;
+    }
+
+    .about-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+      color: #444;
+    }
+
+
+    /* =========================================
+       ACADEMICS
+       ========================================= */
+
+    .academics {
+      background: #f5f7fa;
+    }
+
+    .academic-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .academic-card {
+      background: white;
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .academic-card h3 {
+      color: #7b0000;
+      margin: 10px 0;
+    }
+
+    .academic-card .emoji {
+      font-size: 42px;
+    }
+
+
+    /* =========================================
+       WHY CHOOSE US
+       ========================================= */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .why-item {
+      padding: 25px;
+      border-radius: 10px;
+      background: #fffaf0;
+      border-left: 5px solid #d4af37;
+    }
+
+    .why-item h3 {
+      color: #7b0000;
+      margin-bottom: 8px;
+    }
+
+    .why-item p {
+      color: #555;
+    }
+
+
+    /* =========================================
+       CAMPUS
+       ========================================= */
+
+    .campus {
+      background:
+        linear-gradient(
+          rgba(0,60,30,0.82),
+          rgba(0,40,20,0.85)
+        ),
+        linear-gradient(135deg,#1f6b45,#345c2c);
+
+      color: white;
+      text-align: center;
+    }
+
+    .campus .section-title {
+      color: #ffd966;
+    }
+
+    .campus-text {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+
+    /* =========================================
+       GALLERY
+       ========================================= */
+
+    .gallery {
+      background: #ffffff;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .gallery-item {
+      height: 230px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 20px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+    }
+
+    .photo1 {
+      background: linear-gradient(135deg,#7b0000,#b8860b);
+    }
+
+    .photo2 {
+      background: linear-gradient(135deg,#245b8c,#4aa3df);
+    }
+
+    .photo3 {
+      background: linear-gradient(135deg,#1d6b3c,#5e9b47);
+    }
+
+    .photo4 {
+      background: linear-gradient(135deg,#7a3d78,#c26bbd);
+    }
+
+    .photo5 {
+      background: linear-gradient(135deg,#a34c22,#e29b52);
+    }
+
+    .photo6 {
+      background: linear-gradient(135deg,#005f73,#0a9396);
+    }
+
+
+    /* =========================================
+       ADMISSIONS
+       ========================================= */
+
+    .admissions {
+      background: #fff7e6;
+    }
+
+    .admission-box {
+      max-width: 750px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      font-size: 15px;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .submit-button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #7b0000;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-button:hover {
+      background: #a00000;
+    }
+
+    .form-note {
+      text-align: center;
+      margin-top: 15px;
+      color: #666;
+      font-size: 14px;
+    }
+
+
+    /* =========================================
+       CONTACT
+       ========================================= */
+
+    .contact {
+      background: #7b0000;
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-title {
+      color: #ffd966;
+    }
+
+    .contact-info {
+      font-size: 18px;
+      line-height: 2;
+      margin-bottom: 30px;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .call-button {
+      background: white;
+      color: #7b0000;
+    }
+
+    .whatsapp-button {
+      background: #25D366;
+      color: white;
+    }
+
+
+    /* =========================================
+       FOOTER
+       ========================================= */
+
+    footer {
+      background: #3d0000;
+      color: #ddd;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    footer strong {
+      color: #ffd966;
+    }
+
+
+    /* =========================================
+       WHATSAPP FLOATING BUTTON
+       ========================================= */
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 28px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+
+    /* =========================================
+       MOBILE DESIGN
+       ========================================= */
+
+    @media (max-width: 900px) {
+
+      nav ul {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .cards,
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .academic-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+
+    @media (max-width: 650px) {
+
+      .navbar {
+        padding: 10px 15px;
+      }
+
+      .brand h1 {
+        font-size: 15px;
+      }
+
+      .brand p {
+        font-size: 9px;
+      }
+
+      .logo-placeholder {
+        width: 45px;
+        height: 45px;
+        font-size: 14px;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      .hero {
+        min-height: 600px;
+      }
+
+      .hero h2 {
+        font-size: 38px;
+      }
+
+      .hero-motto {
+        font-size: 19px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .section-title {
+        font-size: 28px;
+      }
+
+      .cards,
+      .why-grid,
+      .academic-grid,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 18px;
+      }
+
+      .admission-box {
+        padding: 25px 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HEADER
+       ========================= -->
+
+  <header>
+
+    <div class="navbar">
+
+      <div class="brand">
+
+        <div class="logo-placeholder">
+          SSS
+        </div>
+
+        <div>
+          <h1>SRI SATHYA SAI SCHOOL</h1>
+          <p>Education • Values • Excellence</p>
+        </div>
+
+      </div>
+
+
+      <nav>
+
+        <ul>
+
+          <li><a href="#home">Home</a></li>
+
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#academics">Academics</a></li>
+
+          <li><a href="#gallery">Gallery</a></li>
+
+          <li><a href="#admissions">Admissions</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =========================
+       HOME / HERO
+       ========================= -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <p class="hero-small">
+        WELCOME TO
+      </p>
+
+      <h2>
+        SRI SATHYA SAI SCHOOL
+      </h2>
+
+      <p class="hero-location">
+        📍 Metturu, Kotturu Mandal, Srikakulam District
+      </p>
+
+      <p class="hero-motto">
+        Education • Values • Excellence
+      </p>
+
+      <p class="hero-description">
+
+        Nurturing young minds, building strong values
+        and helping every child grow towards a
+        brighter future.
+
+      </p>
+
+
+      <div class="buttons">
+
+        <a href="#admissions" class="btn btn-primary">
+          📝 Admissions Open
+        </a>
+
+        <a href="#contact" class="btn btn-secondary">
+          📞 Contact Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       WELCOME
+       ========================= -->
+
+  <section class="welcome">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Welcome to Sri Sathya Sai School
+      </h2>
+
+      <p class="section-subtitle">
+        A place where learning, values and growth come together.
+      </p>
+
+
+      <div class="welcome-text">
+
+        <p>
+
+          At Sri Sathya Sai School, we believe that education
+          is more than textbooks and examinations.
+
+          We aim to provide a supportive and caring learning
+          environment where every child gets the opportunity
+          to learn, grow, develop confidence and build
+          strong values for life.
+
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+        <div class="card">
+
+          <div class="card-icon">📚</div>
+
+          <h3>Education</h3>
+
+          <p>
+            Building strong academic foundations
+            for every student's future.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">❤️</div>
+
+          <h3>Values</h3>
+
+          <p>
+            Encouraging good character,
+            discipline and respect.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">🏆</div>
+
+          <h3>Excellence</h3>
+
+          <p>
+            Inspiring students to continuously
+            learn, improve and achieve.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       ABOUT
+       ========================= -->
+
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        About Our School
+      </h2>
+
+
+      <p class="section-subtitle">
+        Learning today. Growing for tomorrow.
+      </p>
+
+
+      <div class="about-box">
+
+        <p>
+
+          Sri Sathya Sai School is located in the peaceful
+          surroundings of Metturu, Kotturu Mandal,
+          Srikakulam District, Andhra Pradesh.
+
+        </p>
+
+        <br>
+
+        <p>
+
+          Our school is committed to providing meaningful
+          education while helping students develop
+          knowledge, confidence, discipline, communication
+          skills and strong moral values.
+
+        </p>
+
+        <br>
+
+        <p>
+
+          We believe that every child has potential,
+          and our responsibility is to encourage and
+          support them on their journey.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       ACADEMICS
+       ========================= -->
+
+  <section class="academics" id="academics">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Our Academics
+      </h2>
+
+
+      <p class="section-subtitle">
+
+        Supporting students through every stage
+        of their school journey.
+
+      </p>
+
+
+      <div class="academic-grid">
+
+
+        <div class="academic-card">
+
+          <div class="emoji">🧒</div>
+
+          <h3>Primary School</h3>
+
+          <p>Classes I to V</p>
+
+        </div>
+
+
+        <div class="academic-card">
+
+          <div class="emoji">📖</div>
+
+          <h3>Upper Primary</h3>
+
+          <p>Classes VI to VIII</p>
+
+        </div>
+
+
+        <div class="academic-card">
+
+          <div class="emoji">🎓</div>
+
+          <h3>High School</h3>
+
+          <p>Classes IX & X</p>
+
+        </div>
+
+
+        <div class="academic-card">
+
+          <div class="emoji">🌟</div>
+
+          <h3>All-Round Growth</h3>
+
+          <p>Learning • Values • Confidence</p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       WHY CHOOSE US
+       ========================= -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Why Choose Us?
+      </h2>
+
+
+      <p class="section-subtitle">
+
+        Our commitment is to help every child
+        learn and grow.
+
+      </p>
+
+
+      <div class="why-grid">
+
+
+        <div class="why-item">
+
+          <h3>📚 Quality Education</h3>
+
+          <p>
+            Focus on building strong academic
+            foundations.
+          </p>
+
+        </div>
+
+
+        <div class="why-item">
+
+          <h3>👩‍🏫 Dedicated Teachers</h3>
+
+          <p>
+            Teachers who guide and support
+            students in their learning journey.
+          </p>
+
+        </div>
+
+
+        <div class="why-item">
+
+          <h3>❤️ Individual Attention</h3>
+
+          <p>
+            We believe every child's progress
+            and development matters.
+          </p>
+
+        </div>
+
+
+        <div class="why-item">
+
+          <h3>🗣️ Communication Skills</h3>
+
+          <p>
+            Encouraging confidence and
+            effective communication.
+          </p>
+
+        </div>
+
+
+        <div class="why-item">
+
+          <h3>🌱 Holistic Development</h3>
+
+          <p>
+            Supporting academic, personal
+            and social development.
+          </p>
+
+        </div>
+
+
+        <div class="why-item">
+
+          <h3>🌳 Peaceful Environment</h3>
+
+          <p>
+            A calm and welcoming environment
+            for children to learn and grow.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       CAMPUS
+       ========================= -->
+
+  <section class="campus">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Our School Environment
+      </h2>
+
+
+      <div class="campus-text">
+
+        <p>
+
+          Located amidst the peaceful surroundings
+          of Metturu, Sri Sathya Sai School provides
+          a welcoming environment where children
+          can learn, play, explore and grow.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       GALLERY
+       ========================= -->
+
+  <section class="gallery" id="gallery">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        School Gallery
+      </h2>
+
+
+      <p class="section-subtitle">
+
+        A glimpse into life at Sri Sathya Sai School.
+
+      </p>
+
+
+      <!--
+        REAL SCHOOL PHOTOS WILL BE ADDED HERE
+        IN THE NEXT STEP.
+      -->
+
+
+      <div class="gallery-grid">
+
+
+        <div class="gallery-item photo1">
+          🏫 Our Campus
+        </div>
+
+
+        <div class="gallery-item photo2">
+          📚 Classroom Learning
+        </div>
+
+
+        <div class="gallery-item photo3">
+          🌳 School Environment
+        </div>
+
+
+        <div class="gallery-item photo4">
+          👩‍🏫 Learning Together
+        </div>
+
+
+        <div class="gallery-item photo5">
+          🛝 Play & Grow
+        </div>
+
+
+        <div class="gallery-item photo6">
+          🌟 Student Life
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       ADMISSIONS
+       ========================= -->
+
+  <section class="admissions" id="admissions">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Admissions Open
+      </h2>
+
+
+      <p class="section-subtitle">
+
+        ఆసక్తి ఉన్న తల్లిదండ్రులు మమ్మల్ని సంప్రదించండి
+
+        <br>
+
+        Parents interested in admission can contact us.
+
+      </p>
+
+
+      <div class="admission-box">
+
+
+        <form id="admissionForm">
+
+
+          <div class="form-group">
+
+            <label>
+              Parent's Name
+            </label>
+
+            <input
+              type="text"
+              id="parentName"
+              placeholder="Enter parent's name"
+              required
+            >
+
+          </div>
+
+
+
+          <div class="form-group">
+
+            <label>
+              Mobile Number
+            </label>
+
+            <input
+              type="tel"
+              id="mobile"
+              placeholder="Enter mobile number"
+              required
+            >
+
+          </div>
+
+
+
+          <div class="form-group">
+
+            <label>
+              Student's Name
+            </label>
+
+            <input
+              type="text"
+              id="studentName"
+              placeholder="Enter student's name"
+              required
+            >
+
+          </div>
+
+
+
+          <div class="form-group">
+
+            <label>
+              Class Required
+            </label>
+
+
+            <select id="classRequired">
+
+              <option value="">
+                Select Class
+              </option>
+
+              <option>Class I</option>
+
+              <option>Class II</option>
+
+              <option>Class III</option>
+
+              <option>Class IV</option>
+
+              <option>Class V</option>
+
+              <option>Class VI</option>
+
+              <option>Class VII</option>
+
+              <option>Class VIII</option>
+
+              <option>Class IX</option>
+
+              <option>Class X</option>
+
+            </select>
+
+          </div>
+
+
+
+          <div class="form-group">
+
+            <label>
+              Village
+            </label>
+
+            <input
+              type="text"
+              id="village"
+              placeholder="Enter your village"
+            >
+
+          </div>
+
+
+
+          <div class="form-group">
+
+            <label>
+              Message
+            </label>
+
+            <textarea
+              id="message"
+              placeholder="Any questions or message..."
+            ></textarea>
+
+          </div>
+
+
+
+          <button
+            type="submit"
+            class="submit-button"
+          >
+
+            💬 Send Enquiry on WhatsApp
+
+          </button>
+
+
+        </form>
+
+
+        <p class="form-note">
+
+          Your enquiry will open directly in WhatsApp.
+
+        </p>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       CONTACT
+       ========================= -->
+
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Contact Us
+      </h2>
+
+
+      <div class="contact-info">
+
+        <p>
+          🏫 <strong>Sri Sathya Sai School</strong>
+        </p>
+
+
+        <p>
+          📍 Metturu, Kotturu Mandal
+        </p>
+
+
+        <p>
+          Srikakulam District, Andhra Pradesh
+        </p>
+
+
+        <p>
+          📞 9391938683
+        </p>
+
+
+      </div>
+
+
+
+      <div class="contact-buttons">
+
+
+        <a
+          href="tel:+919391938683"
+          class="btn call-button"
+        >
+
+          📞 Call School
+
+        </a>
+
+
+
+        <a
+          href="https://wa.me/919391938683?text=Hello%20Sri%20Sathya%20Sai%20School%2C%20I%20would%20like%20to%20know%20about%20admissions."
+          class="btn whatsapp-button"
+          target="_blank"
+        >
+
+          💬 WhatsApp Us
+
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
+  <footer>
+
+    <p>
+
+      <strong>
+        SRI SATHYA SAI SCHOOL
+      </strong>
+
+    </p>
+
+
+    <p>
+
+      Education • Values • Excellence
+
+    </p>
+
+
+    <br>
+
+
+    <p>
+
+      © 2026 Sri Sathya Sai School.
+      All Rights Reserved.
+
+    </p>
+
+
+  </footer>
+
+
+
+  <!-- =========================
+       FLOATING WHATSAPP BUTTON
+       ========================= -->
+
+  <a
+    href="https://wa.me/919391938683"
+    class="floating-whatsapp"
+    target="_blank"
+    title="Chat with us on WhatsApp"
+  >
+
+    💬
+
+  </a>
+
+
+
+  <!-- =========================
+       WHATSAPP ADMISSION FORM
+       ========================= -->
+
+  <script>
+
+    document
+      .getElementById("admissionForm")
+      .addEventListener("submit", function(event) {
+
+
+        event.preventDefault();
+
+
+        const parentName =
+          document.getElementById("parentName").value;
+
+
+        const mobile =
+          document.getElementById("mobile").value;
+
+
+        const studentName =
+          document.getElementById("studentName").value;
+
+
+        const classRequired =
+          document.getElementById("classRequired").value;
+
+
+        const village =
+          document.getElementById("village").value;
+
+
+        const message =
+          document.getElementById("message").value;
+
+
+        const whatsappMessage =
+
+          "Hello Sri Sathya Sai School,%0A%0A" +
+
+          "*New Admission Enquiry*%0A%0A" +
+
+          "*Parent Name:* " +
+          parentName + "%0A" +
+
+          "*Mobile:* " +
+          mobile + "%0A" +
+
+          "*Student Name:* " +
+          studentName + "%0A" +
+
+          "*Class Required:* " +
+          classRequired + "%0A" +
+
+          "*Village:* " +
+          village + "%0A" +
+
+          "*Message:* " +
+          message;
+
+
+        const whatsappURL =
+
+          "https://wa.me/919391938683?text=" +
+
+          whatsappMessage;
+
+
+        window.open(
+          whatsappURL,
+          "_blank"
+        );
+
+
+      });
+
+  </script>
+
+
+</body>
+
+</html>
