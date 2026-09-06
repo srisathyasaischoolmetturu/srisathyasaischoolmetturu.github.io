@@ -6,10 +6,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sri Sathya Sai School | Metturu</title>
-
     <meta name="description"
-        content="Sri Sathya Sai School, Metturu - Education, Values and Excellence. English Medium School providing quality education.">
+        content="Sri Sathya Sai School, Metturu - Building Knowledge, Character and Confidence. Quality English Medium Education.">
+
+    <title>Sri Sathya Sai School | Metturu</title>
 
     <style>
 
@@ -19,282 +19,582 @@
             box-sizing: border-box;
         }
 
+
+        :root {
+
+            --primary: #0b3c6f;
+            --primary-dark: #06284a;
+
+            --secondary: #f4a300;
+
+            --gold: #ffbe33;
+
+            --light: #f5f8fc;
+
+            --white: #ffffff;
+
+            --dark: #17202a;
+
+            --gray: #6b7280;
+
+            --success: #14804a;
+
+        }
+
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f7f7f7;
-            color: #222;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: var(--dark);
+
+            background: var(--light);
+
             line-height: 1.6;
+
         }
 
-        /* =========================
-           NAVIGATION
-        ========================= */
 
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-
-            background: #8b0000;
-            color: white;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            padding: 14px 7%;
-
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-circle {
-            width: 58px;
-            height: 58px;
-
-            border-radius: 50%;
-
-            background: white;
-            color: #8b0000;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            font-weight: bold;
-            font-size: 18px;
-
-            border: 2px solid #f4c542;
-        }
-
-        .school-name {
-            font-size: 21px;
-            font-weight: bold;
-        }
-
-        .tagline {
-            font-size: 13px;
-            color: #ffd86b;
-            margin-top: 2px;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 28px;
-        }
-
-        .nav-links a {
+        a {
             text-decoration: none;
-            color: white;
-            font-weight: bold;
-            transition: 0.3s;
         }
 
-        .nav-links a:hover {
-            color: #ffd86b;
+
+        ul {
+            list-style: none;
         }
+
 
 
         /* =========================
-           HERO SECTION
+           TOP BAR
         ========================= */
 
-        .hero {
 
-            min-height: 620px;
+        .topbar {
 
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(90,0,0,0.96),
-                    rgba(130,25,0,0.92)
-                );
+            background: var(--primary-dark);
 
             color: white;
 
+            padding: 9px 7%;
+
             display: flex;
+
+            justify-content: space-between;
+
             align-items: center;
-            justify-content: center;
 
-            text-align: center;
+            font-size: 14px;
 
-            padding: 80px 20px;
-        }
+            flex-wrap: wrap;
 
-        .hero-content {
-            max-width: 1000px;
-        }
-
-        .welcome {
-            color: #ffd86b;
-
-            font-size: 18px;
-
-            letter-spacing: 4px;
-
-            margin-bottom: 20px;
-
-            font-weight: bold;
-        }
-
-        .hero h1 {
-
-            font-size: 70px;
-
-            letter-spacing: 2px;
-
-            margin-bottom: 20px;
-
-        }
-
-        .location {
-
-            font-size: 21px;
-
-            margin-bottom: 25px;
-
-            color: #f5f5f5;
-
-        }
-
-        .hero h2 {
-
-            color: #ffd86b;
-
-            font-size: 30px;
-
-            margin-bottom: 30px;
-
-        }
-
-        .hero p {
-
-            font-size: 20px;
-
-            max-width: 850px;
-
-            margin: auto;
-
-            margin-bottom: 40px;
-
-            line-height: 1.7;
+            gap: 10px;
 
         }
 
 
-        /* BUTTONS */
-
-        .buttons {
+        .topbar-left,
+        .topbar-right {
 
             display: flex;
-
-            justify-content: center;
 
             gap: 20px;
+
+            align-items: center;
 
             flex-wrap: wrap;
 
         }
 
-        .btn {
 
-            padding: 16px 30px;
+        .topbar a {
 
-            border-radius: 8px;
+            color: white;
 
-            text-decoration: none;
+        }
 
-            font-size: 17px;
 
-            font-weight: bold;
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+
+        nav {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            background: white;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 15px 7%;
+
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+        }
+
+
+        .logo {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+        }
+
+
+        .logo-icon {
+
+            width: 55px;
+
+            height: 55px;
+
+            border-radius: 50%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--secondary),
+                    #ffda75
+                );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 28px;
+
+            box-shadow:
+                0 5px 15px
+                rgba(244, 163, 0, 0.3);
+
+        }
+
+
+        .logo-text h2 {
+
+            color: var(--primary);
+
+            font-size: 20px;
+
+            line-height: 1.2;
+
+        }
+
+
+        .logo-text p {
+
+            font-size: 12px;
+
+            color: var(--gray);
+
+        }
+
+
+        .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 25px;
+
+        }
+
+
+        .nav-links a {
+
+            color: var(--dark);
+
+            font-size: 15px;
+
+            font-weight: 600;
 
             transition: 0.3s;
 
         }
 
-        .btn-primary {
 
-            background: #f4c542;
+        .nav-links a:hover {
 
-            color: #4a2500;
+            color: var(--secondary);
 
         }
+
+
+        .admission-btn {
+
+            background: var(--secondary) !important;
+
+            color: white !important;
+
+            padding: 11px 18px;
+
+            border-radius: 7px;
+
+        }
+
+
+        .admission-btn:hover {
+
+            background: #d98d00;
+
+        }
+
+
+        .menu-btn {
+
+            display: none;
+
+            font-size: 26px;
+
+            cursor: pointer;
+
+            border: none;
+
+            background: none;
+
+        }
+
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+
+        .hero {
+
+            min-height: 650px;
+
+            display: flex;
+
+            align-items: center;
+
+            padding: 80px 7%;
+
+            color: white;
+
+            background:
+
+                linear-gradient(
+                    120deg,
+                    rgba(6, 40, 74, 0.96),
+                    rgba(11, 60, 111, 0.88)
+                );
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+        .hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 600px;
+
+            height: 600px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(244, 163, 0, 0.12);
+
+            right: -150px;
+
+            top: -200px;
+
+        }
+
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 750px;
+
+        }
+
+
+        .hero-badge {
+
+            display: inline-block;
+
+            background:
+                rgba(255, 255, 255, 0.15);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.2);
+
+            padding: 8px 16px;
+
+            border-radius: 30px;
+
+            margin-bottom: 20px;
+
+            font-size: 14px;
+
+        }
+
+
+        .hero h1 {
+
+            font-size: 55px;
+
+            line-height: 1.15;
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .hero h1 span {
+
+            color: var(--gold);
+
+        }
+
+
+        .hero p {
+
+            font-size: 18px;
+
+            color: #e5e7eb;
+
+            max-width: 650px;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .btn {
+
+            padding: 14px 24px;
+
+            border-radius: 7px;
+
+            font-weight: bold;
+
+            display: inline-block;
+
+            transition: 0.3s;
+
+        }
+
+
+        .btn-primary {
+
+            background: var(--secondary);
+
+            color: white;
+
+        }
+
 
         .btn-primary:hover {
 
-            background: white;
-
             transform: translateY(-3px);
 
+            background: #d98d00;
+
         }
 
-        .btn-secondary {
+
+        .btn-outline {
+
+            border: 2px solid white;
+
+            color: white;
+
+        }
+
+
+        .btn-outline:hover {
 
             background: white;
 
-            color: #8b0000;
+            color: var(--primary);
 
         }
 
-        .btn-secondary:hover {
 
-            background: #ffd86b;
 
-            transform: translateY(-3px);
+        /* =========================
+           STATS
+        ========================= */
+
+
+        .stats {
+
+            width: 86%;
+
+            margin: -50px auto 0;
+
+            position: relative;
+
+            z-index: 10;
+
+            background: white;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 10px 35px
+                rgba(0, 0, 0, 0.12);
+
+            overflow: hidden;
 
         }
+
+
+        .stat {
+
+            padding: 28px 20px;
+
+            text-align: center;
+
+            border-right:
+                1px solid #eeeeee;
+
+        }
+
+
+        .stat:last-child {
+
+            border-right: none;
+
+        }
+
+
+        .stat h2 {
+
+            font-size: 30px;
+
+            color: var(--primary);
+
+        }
+
+
+        .stat p {
+
+            color: var(--gray);
+
+            font-size: 14px;
+
+        }
+
 
 
         /* =========================
            GENERAL SECTIONS
         ========================= */
 
+
         section {
 
-            padding: 80px 8%;
+            padding: 90px 7%;
 
         }
+
 
         .section-title {
 
             text-align: center;
 
+            margin-bottom: 55px;
+
+        }
+
+
+        .section-title span {
+
+            color: var(--secondary);
+
+            font-weight: bold;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+
+            font-size: 14px;
+
+        }
+
+
+        .section-title h2 {
+
             font-size: 38px;
 
-            color: #8b0000;
+            color: var(--primary);
 
-            margin-bottom: 15px;
+            margin-top: 10px;
+
+        }
+
+
+        .section-title p {
+
+            max-width: 700px;
+
+            margin: 15px auto;
+
+            color: var(--gray);
 
         }
 
-        .section-line {
-
-            width: 80px;
-
-            height: 4px;
-
-            background: #f4c542;
-
-            margin: 0 auto 50px auto;
-
-            border-radius: 10px;
-
-        }
 
 
         /* =========================
            ABOUT
         ========================= */
+
 
         .about {
 
@@ -302,364 +602,180 @@
 
         }
 
-        .about-container {
 
-            max-width: 1100px;
-
-            margin: auto;
+        .about-grid {
 
             display: grid;
 
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns:
+                1fr 1fr;
 
-            gap: 60px;
+            gap: 70px;
 
             align-items: center;
 
         }
 
-        .about-text h3 {
 
-            font-size: 28px;
+        .about-image {
 
-            color: #8b0000;
+            min-height: 400px;
+
+            border-radius: 18px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    var(--primary),
+                    #1b6bb8
+                );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            color: white;
+
+            font-size: 110px;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+        .about-image::after {
+
+            content: "SRI SATHYA SAI SCHOOL";
+
+            position: absolute;
+
+            bottom: 25px;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        .about-content h2 {
+
+            color: var(--primary);
+
+            font-size: 36px;
 
             margin-bottom: 20px;
 
         }
 
-        .about-text p {
 
-            font-size: 17px;
+        .about-content p {
+
+            color: var(--gray);
 
             margin-bottom: 18px;
 
-            color: #444;
+        }
+
+
+        .about-list {
+
+            margin-top: 25px;
 
         }
 
-        .about-card {
 
-            background:
+        .about-list li {
 
-            linear-gradient(
-                135deg,
-                #8b0000,
-                #b22222
-            );
+            padding: 10px 0;
 
-            color: white;
-
-            padding: 45px;
-
-            border-radius: 15px;
-
-            text-align: center;
-
-            box-shadow:
-            0 10px 30px rgba(0,0,0,0.15);
+            font-weight: 600;
 
         }
 
-        .about-card .icon {
 
-            font-size: 70px;
+        .about-list li::before {
 
-            margin-bottom: 15px;
+            content: "✓";
 
-        }
+            color: var(--success);
 
-        .about-card h3 {
+            margin-right: 10px;
 
-            font-size: 28px;
-
-            margin-bottom: 15px;
+            font-weight: bold;
 
         }
 
-        .about-card p {
-
-            color: #ffe6e6;
-
-        }
 
 
         /* =========================
-           VISION & MISSION
+           PROGRAMS
         ========================= */
 
-        .vision {
 
-            background: #f3f3f3;
+        .programs {
 
-        }
-
-        .vision-container {
-
-            max-width: 1100px;
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns: 1fr 1fr;
-
-            gap: 35px;
-
-        }
-
-        .vision-box {
-
-            background: white;
-
-            padding: 40px;
-
-            border-radius: 15px;
-
-            text-align: center;
-
-            box-shadow:
-            0 5px 20px rgba(0,0,0,0.08);
-
-            transition: 0.3s;
-
-        }
-
-        .vision-box:hover {
-
-            transform: translateY(-7px);
-
-        }
-
-        .vision-icon {
-
-            font-size: 50px;
-
-            margin-bottom: 20px;
-
-        }
-
-        .vision-box h3 {
-
-            color: #8b0000;
-
-            font-size: 27px;
-
-            margin-bottom: 15px;
-
-        }
-
-        .vision-box p {
-
-            color: #555;
-
-            font-size: 17px;
+            background: #f4f7fb;
 
         }
 
 
-        /* =========================
-           ACADEMICS
-        ========================= */
-
-        .academics {
-
-            background: white;
-
-        }
-
-        .academic-grid {
-
-            max-width: 1200px;
-
-            margin: auto;
+        .program-grid {
 
             display: grid;
 
             grid-template-columns:
-            repeat(3, 1fr);
+                repeat(3, 1fr);
 
             gap: 25px;
 
         }
 
-        .academic-card {
 
-            background: #fff;
+        .program-card {
 
-            border-radius: 15px;
+            background: white;
 
-            padding: 35px 25px;
+            padding: 35px 28px;
 
-            text-align: center;
-
-            border: 1px solid #eee;
-
-            box-shadow:
-            0 5px 18px rgba(0,0,0,0.08);
+            border-radius: 14px;
 
             transition: 0.3s;
 
+            border:
+                1px solid #eeeeee;
+
         }
 
-        .academic-card:hover {
+
+        .program-card:hover {
 
             transform: translateY(-8px);
 
             box-shadow:
-            0 12px 25px rgba(0,0,0,0.12);
-
-        }
-
-        .academic-icon {
-
-            font-size: 45px;
-
-            margin-bottom: 15px;
-
-        }
-
-        .academic-card h3 {
-
-            color: #8b0000;
-
-            margin-bottom: 12px;
-
-            font-size: 22px;
-
-        }
-
-        .academic-card p {
-
-            color: #555;
+                0 15px 35px
+                rgba(0, 0, 0, 0.1);
 
         }
 
 
-        /* =========================
-           SPECIAL PROGRAMMES
-        ========================= */
+        .program-icon {
 
-        .programmes {
+            width: 65px;
 
-            background:
-
-            linear-gradient(
-                135deg,
-                #720000,
-                #a31515
-            );
-
-            color: white;
-
-        }
-
-        .programmes .section-title {
-
-            color: white;
-
-        }
-
-        .programme-grid {
-
-            max-width: 1200px;
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-            repeat(3, 1fr);
-
-            gap: 25px;
-
-        }
-
-        .programme-card {
-
-            background: white;
-
-            color: #222;
-
-            padding: 35px 25px;
+            height: 65px;
 
             border-radius: 15px;
 
-            text-align: center;
-
-            transition: 0.3s;
-
-        }
-
-        .programme-card:hover {
-
-            transform: translateY(-8px);
-
-        }
-
-        .programme-card h3 {
-
-            color: #8b0000;
-
-            font-size: 21px;
-
-            margin-bottom: 15px;
-
-        }
-
-        .programme-card p {
-
-            color: #555;
-
-        }
-
-
-        /* =========================
-           WHY CHOOSE US
-        ========================= */
-
-        .why {
-
-            background: #f7f7f7;
-
-        }
-
-        .why-grid {
-
-            max-width: 1200px;
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-            repeat(4, 1fr);
-
-            gap: 25px;
-
-        }
-
-        .why-card {
-
-            text-align: center;
-
-            padding: 25px;
-
-        }
-
-        .why-icon {
-
-            width: 80px;
-
-            height: 80px;
-
-            margin: auto;
-
-            margin-bottom: 18px;
-
-            background: #8b0000;
-
-            border-radius: 50%;
+            background:
+                #fff4d8;
 
             display: flex;
 
@@ -667,28 +783,213 @@
 
             justify-content: center;
 
-            font-size: 35px;
+            font-size: 30px;
+
+            margin-bottom: 20px;
 
         }
 
-        .why-card h3 {
 
-            color: #8b0000;
+        .program-card h3 {
+
+            color: var(--primary);
+
+            margin-bottom: 12px;
+
+            font-size: 21px;
+
+        }
+
+
+        .program-card p {
+
+            color: var(--gray);
+
+            font-size: 15px;
+
+        }
+
+
+
+        /* =========================
+           ACADEMICS
+        ========================= */
+
+
+        .academic-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+        }
+
+
+        .academic-card {
+
+            border-radius: 14px;
+
+            padding: 35px;
+
+            color: white;
+
+            min-height: 250px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: flex-end;
+
+            transition: 0.3s;
+
+        }
+
+
+        .academic-card:hover {
+
+            transform: scale(1.03);
+
+        }
+
+
+        .academic-card:nth-child(1) {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #1769aa,
+                    #063766
+                );
+
+        }
+
+
+        .academic-card:nth-child(2) {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #16804c,
+                    #075b32
+                );
+
+        }
+
+
+        .academic-card:nth-child(3) {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #d78200,
+                    #a85d00
+                );
+
+        }
+
+
+        .academic-card h3 {
+
+            font-size: 25px;
 
             margin-bottom: 10px;
 
         }
 
-        .why-card p {
 
-            color: #555;
+
+        /* =========================
+           WHY US
+        ========================= */
+
+
+        .why {
+
+            background: var(--primary);
+
+            color: white;
 
         }
+
+
+        .why .section-title h2 {
+
+            color: white;
+
+        }
+
+
+        .why .section-title p {
+
+            color: #d7e3ef;
+
+        }
+
+
+        .why-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 25px;
+
+        }
+
+
+        .why-card {
+
+            padding: 30px;
+
+            text-align: center;
+
+            background:
+                rgba(255, 255, 255, 0.08);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.12);
+
+            border-radius: 12px;
+
+        }
+
+
+        .why-icon {
+
+            font-size: 42px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .why-card h3 {
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .why-card p {
+
+            font-size: 14px;
+
+            color: #d9e5f1;
+
+        }
+
 
 
         /* =========================
            ACHIEVEMENTS
         ========================= */
+
 
         .achievements {
 
@@ -696,249 +997,211 @@
 
         }
 
+
         .achievement-grid {
-
-            max-width: 1100px;
-
-            margin: auto;
 
             display: grid;
 
             grid-template-columns:
-            repeat(3, 1fr);
+                repeat(3, 1fr);
 
             gap: 25px;
 
         }
 
+
         .achievement-card {
 
-            background:
+            background: var(--light);
 
-            linear-gradient(
-                135deg,
-                #8b0000,
-                #b22222
-            );
-
-            color: white;
-
-            padding: 40px 20px;
+            padding: 40px;
 
             border-radius: 15px;
 
             text-align: center;
 
+            border:
+                1px solid #e5e7eb;
+
         }
 
-        .achievement-card .number {
 
-            font-size: 45px;
+        .marks {
+
+            font-size: 42px;
+
+            color: var(--secondary);
 
             font-weight: bold;
 
-            color: #ffd86b;
+        }
 
-            margin-bottom: 10px;
+
+        .achievement-card h3 {
+
+            color: var(--primary);
+
+            margin-top: 10px;
 
         }
+
 
         .achievement-card p {
 
-            color: #ffeaea;
+            color: var(--gray);
+
+            margin-top: 8px;
 
         }
+
 
 
         /* =========================
-           GALLERY
+           FACILITIES
         ========================= */
 
-        .gallery {
 
-            background: #f3f3f3;
+        .facilities {
+
+            background: #f4f7fb;
 
         }
 
-        .gallery-grid {
 
-            max-width: 1200px;
-
-            margin: auto;
+        .facility-grid {
 
             display: grid;
 
             grid-template-columns:
-            repeat(3, 1fr);
+                repeat(3, 1fr);
 
             gap: 20px;
 
         }
 
-        .gallery-item {
 
-            height: 220px;
-
-            border-radius: 15px;
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-            text-align: center;
-
-            padding: 20px;
-
-            font-size: 20px;
-
-            font-weight: bold;
-
-            color: white;
-
-            background:
-
-            linear-gradient(
-                135deg,
-                #8b0000,
-                #c0392b
-            );
-
-            transition: 0.3s;
-
-        }
-
-        .gallery-item:hover {
-
-            transform: scale(1.03);
-
-        }
-
-
-        /* =========================
-           ADMISSIONS
-        ========================= */
-
-        .admissions {
-
-            background:
-
-            linear-gradient(
-                135deg,
-                #f4c542,
-                #e5ae20
-            );
-
-            text-align: center;
-
-        }
-
-        .admissions h2 {
-
-            color: #5b2500;
-
-            font-size: 40px;
-
-            margin-bottom: 20px;
-
-        }
-
-        .admissions p {
-
-            max-width: 750px;
-
-            margin: auto;
-
-            font-size: 19px;
-
-            margin-bottom: 30px;
-
-            color: #4a2500;
-
-        }
-
-        .admission-btn {
-
-            display: inline-block;
-
-            background: #8b0000;
-
-            color: white;
-
-            padding: 16px 30px;
-
-            border-radius: 8px;
-
-            text-decoration: none;
-
-            font-weight: bold;
-
-            transition: 0.3s;
-
-        }
-
-        .admission-btn:hover {
-
-            background: #5c0000;
-
-            transform: translateY(-3px);
-
-        }
-
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact {
+        .facility {
 
             background: white;
 
-        }
+            padding: 25px;
 
-        .contact-container {
+            border-radius: 12px;
 
-            max-width: 1100px;
+            display: flex;
 
-            margin: auto;
+            gap: 15px;
 
-            display: grid;
+            align-items: center;
 
-            grid-template-columns:
-            1fr 1fr;
-
-            gap: 40px;
+            transition: 0.3s;
 
         }
 
-        .contact-info {
 
-            padding: 30px;
+        .facility:hover {
 
-        }
-
-        .contact-info h3 {
-
-            color: #8b0000;
-
-            font-size: 28px;
-
-            margin-bottom: 25px;
+            box-shadow:
+                0 10px 25px
+                rgba(0, 0, 0, 0.08);
 
         }
 
-        .contact-item {
 
-            margin-bottom: 20px;
+        .facility-icon {
+
+            font-size: 30px;
+
+        }
+
+
+        .facility h3 {
+
+            color: var(--primary);
 
             font-size: 17px;
 
         }
 
-        .contact-form {
 
-            background: #f7f7f7;
+
+        /* =========================
+           ADMISSION
+        ========================= */
+
+
+        .admission {
+
+            background:
+
+                linear-gradient(
+                    120deg,
+                    var(--primary-dark),
+                    var(--primary)
+                );
+
+            color: white;
+
+        }
+
+
+        .admission-container {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 50px;
+
+            align-items: center;
+
+        }
+
+
+        .admission-content h2 {
+
+            font-size: 42px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .admission-content p {
+
+            color: #d8e3ee;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .admission-points li {
+
+            padding: 8px 0;
+
+        }
+
+
+        .admission-points li::before {
+
+            content: "✓";
+
+            color: var(--gold);
+
+            margin-right: 10px;
+
+            font-weight: bold;
+
+        }
+
+
+        .form-box {
+
+            background: white;
+
+            color: var(--dark);
 
             padding: 35px;
 
@@ -946,92 +1209,253 @@
 
         }
 
-        .contact-form input,
-        .contact-form textarea {
+
+        .form-box h3 {
+
+            color: var(--primary);
+
+            margin-bottom: 20px;
+
+            font-size: 25px;
+
+        }
+
+
+        .form-group {
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+
+            width: 100%;
+
+            padding: 13px;
+
+            border:
+                1px solid #d1d5db;
+
+            border-radius: 6px;
+
+            font-size: 14px;
+
+            outline: none;
+
+        }
+
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+
+            border-color: var(--primary);
+
+        }
+
+
+        .submit-btn {
 
             width: 100%;
 
             padding: 14px;
 
-            margin-bottom: 15px;
-
-            border: 1px solid #ddd;
-
-            border-radius: 7px;
-
-            font-size: 16px;
-
-        }
-
-        .contact-form textarea {
-
-            height: 120px;
-
-            resize: none;
-
-        }
-
-        .contact-form button {
-
-            width: 100%;
-
-            padding: 15px;
-
             border: none;
 
-            background: #8b0000;
+            background: var(--secondary);
 
             color: white;
 
-            font-size: 17px;
+            font-size: 16px;
 
             font-weight: bold;
 
-            border-radius: 7px;
+            border-radius: 6px;
 
             cursor: pointer;
 
         }
 
 
-        /* =========================
-           FOOTER
-        ========================= */
+        .submit-btn:hover {
 
-        footer {
-
-            background: #5c0000;
-
-            color: white;
-
-            text-align: center;
-
-            padding: 30px 20px;
+            background: #d98d00;
 
         }
 
-        footer p {
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+
+        .contact-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+        }
+
+
+        .contact-card {
+
+            text-align: center;
+
+            padding: 30px;
+
+            border-radius: 12px;
+
+            background: white;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0, 0, 0, 0.06);
+
+        }
+
+
+        .contact-icon {
+
+            font-size: 35px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .contact-card h3 {
+
+            color: var(--primary);
 
             margin-bottom: 8px;
 
         }
 
 
+        .contact-card p {
+
+            color: var(--gray);
+
+        }
+
+
+
         /* =========================
-           FLOATING BUTTON
+           FOOTER
         ========================= */
 
-        .floating-button {
+
+        footer {
+
+            background: #061c32;
+
+            color: white;
+
+            padding: 60px 7% 20px;
+
+        }
+
+
+        .footer-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                2fr 1fr 1fr;
+
+            gap: 50px;
+
+            margin-bottom: 40px;
+
+        }
+
+
+        .footer-brand h2 {
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .footer-brand p {
+
+            color: #b8c7d5;
+
+            max-width: 400px;
+
+        }
+
+
+        .footer-column h3 {
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .footer-column li {
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .footer-column a {
+
+            color: #b8c7d5;
+
+        }
+
+
+        .footer-column a:hover {
+
+            color: var(--gold);
+
+        }
+
+
+        .copyright {
+
+            border-top:
+                1px solid
+                rgba(255, 255, 255, 0.1);
+
+            padding-top: 20px;
+
+            text-align: center;
+
+            color: #9fb0bf;
+
+            font-size: 14px;
+
+        }
+
+
+
+        /* =========================
+           WHATSAPP
+        ========================= */
+
+
+        .whatsapp {
 
             position: fixed;
 
-            right: 25px;
+            right: 22px;
 
-            bottom: 25px;
+            bottom: 22px;
 
-            width: 65px;
+            width: 60px;
 
-            height: 65px;
+            height: 60px;
 
             border-radius: 50%;
 
@@ -1041,136 +1465,133 @@
 
             display: flex;
 
-            align-items: center;
-
             justify-content: center;
 
-            font-size: 30px;
+            align-items: center;
 
-            text-decoration: none;
+            font-size: 28px;
 
             box-shadow:
-            0 5px 20px rgba(0,0,0,0.25);
+                0 8px 25px
+                rgba(0, 0, 0, 0.25);
 
             z-index: 999;
 
         }
 
 
+
         /* =========================
-           MOBILE DESIGN
+           MOBILE
         ========================= */
 
-        @media (max-width: 900px) {
 
-            nav {
+        @media (max-width: 950px) {
 
-                flex-direction: column;
-
-                gap: 15px;
-
-                padding: 15px;
-
-            }
-
-            .nav-links {
-
-                gap: 14px;
-
-                flex-wrap: wrap;
-
-                justify-content: center;
-
-            }
 
             .hero h1 {
 
-                font-size: 45px;
+                font-size: 42px;
 
             }
 
-            .about-container {
 
-                grid-template-columns: 1fr;
-
-            }
-
-            .vision-container {
-
-                grid-template-columns: 1fr;
-
-            }
-
-            .academic-grid {
+            .stats {
 
                 grid-template-columns:
-                repeat(2, 1fr);
+                    repeat(2, 1fr);
 
             }
 
-            .programme-grid {
 
-                grid-template-columns: 1fr;
+            .program-grid,
+            .academic-grid,
+            .achievement-grid {
+
+                grid-template-columns:
+                    1fr 1fr;
 
             }
+
 
             .why-grid {
 
                 grid-template-columns:
-                repeat(2, 1fr);
+                    1fr 1fr;
 
             }
 
-            .achievement-grid {
 
-                grid-template-columns: 1fr;
-
-            }
-
-            .gallery-grid {
+            .facility-grid {
 
                 grid-template-columns:
-                repeat(2, 1fr);
-
-            }
-
-            .contact-container {
-
-                grid-template-columns: 1fr;
+                    1fr 1fr;
 
             }
 
         }
 
 
-        @media (max-width: 550px) {
 
-            .school-name {
+        @media (max-width: 768px) {
 
-                font-size: 17px;
 
-            }
+            .topbar {
 
-            .logo-circle {
+                justify-content: center;
 
-                width: 50px;
-                height: 50px;
+                text-align: center;
 
             }
+
 
             .nav-links {
 
-                font-size: 13px;
+                display: none;
 
-                gap: 10px;
+                position: absolute;
+
+                top: 85px;
+
+                left: 0;
+
+                width: 100%;
+
+                background: white;
+
+                flex-direction: column;
+
+                padding: 25px;
+
+                box-shadow:
+                    0 10px 20px
+                    rgba(0, 0, 0, 0.1);
 
             }
+
+
+            .nav-links.active {
+
+                display: flex;
+
+            }
+
+
+            .menu-btn {
+
+                display: block;
+
+            }
+
 
             .hero {
 
-                min-height: 550px;
+                min-height: 600px;
+
+                padding: 60px 7%;
 
             }
+
 
             .hero h1 {
 
@@ -1178,51 +1599,119 @@
 
             }
 
-            .hero h2 {
 
-                font-size: 24px;
+            .stats {
 
-            }
-
-            .hero p {
-
-                font-size: 17px;
+                width: 90%;
 
             }
 
-            .location {
 
-                font-size: 17px;
+            .about-grid,
+            .admission-container {
+
+                grid-template-columns:
+                    1fr;
 
             }
 
-            .section-title {
+
+            .about-image {
+
+                min-height: 300px;
+
+            }
+
+
+            .footer-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .section-title h2 {
 
                 font-size: 30px;
 
             }
 
-            .academic-grid {
-
-                grid-template-columns: 1fr;
-
-            }
-
-            .why-grid {
-
-                grid-template-columns: 1fr;
-
-            }
-
-            .gallery-grid {
-
-                grid-template-columns: 1fr;
-
-            }
 
             section {
 
-                padding: 60px 6%;
+                padding: 70px 7%;
+
+            }
+
+        }
+
+
+
+        @media (max-width: 550px) {
+
+
+            .logo-text h2 {
+
+                font-size: 16px;
+
+            }
+
+
+            .logo-icon {
+
+                width: 45px;
+
+                height: 45px;
+
+            }
+
+
+            .stats {
+
+                grid-template-columns:
+                    1fr 1fr;
+
+            }
+
+
+            .stat {
+
+                padding: 20px 10px;
+
+            }
+
+
+            .program-grid,
+            .academic-grid,
+            .achievement-grid,
+            .why-grid,
+            .facility-grid,
+            .contact-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 32px;
+
+            }
+
+
+            .hero p {
+
+                font-size: 16px;
+
+            }
+
+
+            .admission-content h2 {
+
+                font-size: 32px;
 
             }
 
@@ -1236,291 +1725,338 @@
 <body>
 
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
+
+    <!-- TOP BAR -->
+
+
+    <div class="topbar">
+
+        <div class="topbar-left">
+
+            <span>📍 Metturu, Kotturu Mandal, Srikakulam District</span>
+
+        </div>
+
+
+        <div class="topbar-right">
+
+            <span>📚 English Medium School</span>
+
+            <span>📞 Contact Us</span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- NAVIGATION -->
+
 
     <nav>
 
+
         <div class="logo">
 
-            <div class="logo-circle">
-                SSS
+            <div class="logo-icon">
+
+                🌸
+
             </div>
 
-            <div>
 
-                <div class="school-name">
-                    SRI SATHYA SAI SCHOOL
-                </div>
+            <div class="logo-text">
 
-                <div class="tagline">
-                    Education • Values • Excellence
-                </div>
+                <h2>Sri Sathya Sai School</h2>
+
+                <p>Metturu • Education • Values • Excellence</p>
 
             </div>
 
         </div>
 
 
-        <ul class="nav-links">
 
-            <li>
-                <a href="#home">Home</a>
-            </li>
+        <div class="nav-links" id="navLinks">
 
-            <li>
-                <a href="#about">About</a>
-            </li>
+            <a href="#home">Home</a>
 
-            <li>
-                <a href="#academics">Academics</a>
-            </li>
+            <a href="#about">About</a>
 
-            <li>
-                <a href="#achievements">Achievements</a>
-            </li>
+            <a href="#academics">Academics</a>
 
-            <li>
-                <a href="#gallery">Gallery</a>
-            </li>
+            <a href="#programs">Programs</a>
 
-            <li>
-                <a href="#admissions">Admissions</a>
-            </li>
+            <a href="#achievements">Achievements</a>
 
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <a href="#contact">Contact</a>
 
-        </ul>
+            <a href="#admissions"
+                class="admission-btn">
+
+                Admissions
+
+            </a>
+
+        </div>
+
+
+        <button class="menu-btn"
+            onclick="toggleMenu()">
+
+            ☰
+
+        </button>
+
 
     </nav>
 
 
 
-    <!-- =========================
-         HERO SECTION
-    ========================== -->
+    <!-- HERO -->
 
-    <section class="hero" id="home">
+
+    <section class="hero"
+        id="home">
+
 
         <div class="hero-content">
 
-            <div class="welcome">
-                WELCOME TO
+
+            <div class="hero-badge">
+
+                🌟 Building Bright Futures Since the Beginning
+
             </div>
 
 
             <h1>
-                SRI SATHYA SAI SCHOOL
+
+                Building
+                <span>Knowledge, Character</span>
+                & Confidence
+
             </h1>
 
 
-            <div class="location">
+            <p>
 
-                📍 Metturu, Kotturu Mandal,
-                Srikakulam District
+                Welcome to Sri Sathya Sai School, Metturu —
+                a place where quality education,
+                strong values and young dreams come together.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a href="#admissions"
+                    class="btn btn-primary">
+
+                    Apply for Admission
+
+                </a>
+
+
+                <a href="#about"
+                    class="btn btn-outline">
+
+                    Explore Our School
+
+                </a>
+
 
             </div>
 
 
+        </div>
+
+
+    </section>
+
+
+
+    <!-- STATS -->
+
+
+    <div class="stats">
+
+
+        <div class="stat">
+
+            <h2>200+</h2>
+
+            <p>Students</p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <h2>10+</h2>
+
+            <p>Dedicated Teachers</p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <h2>LKG–9th</h2>
+
+            <p>Classes</p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <h2>100%</h2>
+
+            <p>Commitment</p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ABOUT -->
+
+
+    <section class="about"
+        id="about">
+
+
+        <div class="about-grid">
+
+
+            <div class="about-image">
+
+                📚
+
+            </div>
+
+
+
+            <div class="about-content">
+
+
+                <span
+                    style="
+                    color:#f4a300;
+                    font-weight:bold;
+                    letter-spacing:1px;
+                    ">
+
+                    ABOUT OUR SCHOOL
+
+                </span>
+
+
+                <h2>
+
+                    Education With Values
+
+                </h2>
+
+
+                <p>
+
+                    Sri Sathya Sai School, Metturu,
+                    is committed to providing quality
+                    education in a positive and
+                    student-friendly environment.
+
+                </p>
+
+
+                <p>
+
+                    We believe education should not
+                    only help students score marks,
+                    but should also develop
+                    confidence, discipline,
+                    character, communication skills
+                    and a strong foundation for life.
+
+                </p>
+
+
+                <ul class="about-list">
+
+
+                    <li>
+                        Quality English Medium Education
+                    </li>
+
+
+                    <li>
+                        Experienced & Dedicated Teachers
+                    </li>
+
+
+                    <li>
+                        Strong Academic Foundation
+                    </li>
+
+
+                    <li>
+                        Focus on Values & Discipline
+                    </li>
+
+
+                    <li>
+                        Individual Student Attention
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ACADEMICS -->
+
+
+    <section
+        id="academics">
+
+
+        <div class="section-title">
+
+
+            <span>Academics</span>
+
+
             <h2>
-                Education • Values • Excellence
+
+                Learning For Every Stage
+
             </h2>
 
 
             <p>
 
-                Nurturing young minds, building strong values
-                and helping every child grow towards
-                a brighter future.
+                A strong academic journey designed
+                to build knowledge, confidence and
+                curiosity.
 
             </p>
 
 
-            <div class="buttons">
-
-                <a href="#admissions"
-                   class="btn btn-primary">
-
-                    📝 Admissions
-
-                </a>
-
-
-                <a href="#contact"
-                   class="btn btn-secondary">
-
-                    📞 Contact Us
-
-                </a>
-
-            </div>
-
         </div>
 
-    </section>
-
-
-
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
-    <section class="about" id="about">
-
-        <h2 class="section-title">
-            About Our School
-        </h2>
-
-        <div class="section-line"></div>
-
-
-        <div class="about-container">
-
-
-            <div class="about-text">
-
-                <h3>
-                    Building Futures with Values
-                </h3>
-
-
-                <p>
-
-                    Sri Sathya Sai School is committed to
-                    providing quality education in a supportive,
-                    disciplined and inspiring learning environment.
-
-                </p>
-
-
-                <p>
-
-                    We believe that education is not only about
-                    academic knowledge. It is also about building
-                    character, confidence, discipline, curiosity
-                    and strong values.
-
-                </p>
-
-
-                <p>
-
-                    Our goal is to help every student discover
-                    their potential and prepare confidently
-                    for the future.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="about-card">
-
-                <div class="icon">
-                    🏫
-                </div>
-
-                <h3>
-                    Learning Beyond Classrooms
-                </h3>
-
-                <p>
-
-                    A school where students learn,
-                    grow, explore and develop
-                    into responsible individuals.
-
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         VISION & MISSION
-    ========================== -->
-
-    <section class="vision">
-
-        <h2 class="section-title">
-            Our Vision & Mission
-        </h2>
-
-        <div class="section-line"></div>
-
-
-        <div class="vision-container">
-
-
-            <div class="vision-box">
-
-                <div class="vision-icon">
-                    👁️
-                </div>
-
-                <h3>
-                    Our Vision
-                </h3>
-
-                <p>
-
-                    To inspire young learners to become
-                    knowledgeable, confident, responsible
-                    and compassionate citizens.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="vision-box">
-
-                <div class="vision-icon">
-                    🎯
-                </div>
-
-                <h3>
-                    Our Mission
-                </h3>
-
-                <p>
-
-                    To provide quality education that combines
-                    academic excellence, strong values,
-                    discipline and all-round development.
-
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         ACADEMICS
-    ========================== -->
-
-    <section class="academics" id="academics">
-
-        <h2 class="section-title">
-            Academics
-        </h2>
-
-        <div class="section-line"></div>
 
 
         <div class="academic-grid">
@@ -1528,21 +2064,22 @@
 
             <div class="academic-card">
 
-                <div class="academic-icon">
-                    📚
-                </div>
 
                 <h3>
-                    Classes I – V
+
+                    🌱 Primary School
+
                 </h3>
+
 
                 <p>
 
-                    Building strong foundations
-                    in language, mathematics,
-                    science and essential skills.
+                    Building strong foundations in
+                    language, mathematics, science
+                    and communication.
 
                 </p>
+
 
             </div>
 
@@ -1550,151 +2087,317 @@
 
             <div class="academic-card">
 
-                <div class="academic-icon">
+
+                <h3>
+
+                    📖 Middle School
+
+                </h3>
+
+
+                <p>
+
+                    Developing deeper understanding,
+                    problem-solving ability and
+                    academic confidence.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="academic-card">
+
+
+                <h3>
+
+                    🎯 High School
+
+                </h3>
+
+
+                <p>
+
+                    Focused academic preparation,
+                    strong fundamentals and
+                    preparation for future success.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- SPECIAL PROGRAMS -->
+
+
+    <section
+        class="programs"
+        id="programs">
+
+
+        <div class="section-title">
+
+
+            <span>Special Programs</span>
+
+
+            <h2>
+
+                Beyond Regular Education
+
+            </h2>
+
+
+            <p>
+
+                Giving students additional
+                opportunities to learn,
+                compete and dream bigger.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="program-grid">
+
+
+            <div class="program-card">
+
+
+                <div class="program-icon">
+
+                    🔬
+
+                </div>
+
+
+                <h3>
+
+                    IIT-JEE & NEET Foundation
+
+                </h3>
+
+
+                <p>
+
+                    Early foundation classes designed
+                    to strengthen Mathematics and
+                    Science concepts for ambitious
+                    students.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="program-card">
+
+
+                <div class="program-icon">
+
+                    🏆
+
+                </div>
+
+
+                <h3>
+
+                    Navodaya Special Classes
+
+                </h3>
+
+
+                <p>
+
+                    Special guidance and foundation
+                    preparation for students aspiring
+                    to perform well in competitive
+                    entrance examinations.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="program-card">
+
+
+                <div class="program-icon">
+
                     🧠
+
                 </div>
 
+
                 <h3>
-                    Classes VI – VIII
+
+                    Olympiad Foundation
+
                 </h3>
+
 
                 <p>
 
-                    Strengthening conceptual learning,
-                    analytical thinking and academic
-                    confidence.
+                    Encouraging logical thinking,
+                    problem solving and competitive
+                    learning through Olympiad
+                    preparation.
 
                 </p>
+
 
             </div>
 
 
 
-            <div class="academic-card">
+            <div class="program-card">
 
-                <div class="academic-icon">
-                    🎓
+
+                <div class="program-icon">
+
+                    🗣️
+
                 </div>
 
+
                 <h3>
-                    Classes IX – X
+
+                    English Communication
+
                 </h3>
+
 
                 <p>
 
-                    Focused academic preparation
-                    and strong foundations for
-                    future opportunities.
+                    Developing speaking confidence,
+                    vocabulary, pronunciation and
+                    effective communication skills.
 
                 </p>
 
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         SPECIAL PROGRAMMES
-    ========================== -->
-
-    <section class="programmes">
-
-        <h2 class="section-title">
-            Special Learning Programmes
-        </h2>
-
-        <div class="section-line"></div>
-
-
-        <div class="programme-grid">
-
-
-            <div class="programme-card">
-
-                <div class="academic-icon">
-                    🚀
-                </div>
-
-                <h3>
-                    Foundation Learning
-                </h3>
-
-                <p>
-
-                    Strong conceptual preparation
-                    designed to build confidence
-                    in important subjects.
-
-                </p>
 
             </div>
 
 
 
-            <div class="programme-card">
+            <div class="program-card">
 
-                <div class="academic-icon">
-                    🏅
+
+                <div class="program-icon">
+
+                    🎨
+
                 </div>
 
+
                 <h3>
-                    Olympiad Preparation
+
+                    Co-Curricular Activities
+
                 </h3>
+
 
                 <p>
 
-                    Encouraging students to
-                    challenge themselves and
-                    develop problem-solving skills.
+                    Sports, cultural activities,
+                    competitions and creative
+                    learning opportunities.
 
                 </p>
+
 
             </div>
 
 
 
-            <div class="programme-card">
+            <div class="program-card">
 
-                <div class="academic-icon">
+
+                <div class="program-icon">
+
                     🌟
+
                 </div>
 
+
                 <h3>
-                    Competitive Foundation
+
+                    Personality Development
+
                 </h3>
+
 
                 <p>
 
-                    Helping students build
-                    strong academic foundations
-                    for future competitive learning.
+                    Building discipline,
+                    confidence, leadership and
+                    positive values in every child.
 
                 </p>
+
 
             </div>
 
 
         </div>
 
+
     </section>
 
 
 
-    <!-- =========================
-         WHY CHOOSE US
-    ========================== -->
+    <!-- WHY CHOOSE US -->
+
 
     <section class="why">
 
-        <h2 class="section-title">
-            Why Choose Our School?
-        </h2>
 
-        <div class="section-line"></div>
+        <div class="section-title">
+
+
+            <span
+                style="color:#ffbe33;">
+
+                WHY CHOOSE US
+
+            </span>
+
+
+            <h2>
+
+                Growing Together Towards Excellence
+
+            </h2>
+
+
+            <p>
+
+                We work together with students,
+                parents and teachers to create a
+                better future.
+
+            </p>
+
+
+        </div>
+
 
 
         <div class="why-grid">
@@ -1702,18 +2405,28 @@
 
             <div class="why-card">
 
+
                 <div class="why-icon">
-                    👩‍🏫
+
+                    👨‍🏫
+
                 </div>
 
+
                 <h3>
+
                     Dedicated Teachers
+
                 </h3>
 
+
                 <p>
-                    Caring and committed guidance
-                    for every student.
+
+                    Teachers committed to helping
+                    every student learn and grow.
+
                 </p>
+
 
             </div>
 
@@ -1721,18 +2434,28 @@
 
             <div class="why-card">
 
+
                 <div class="why-icon">
-                    📖
+
+                    👨‍👩‍👧
+
                 </div>
 
+
                 <h3>
-                    Quality Education
+
+                    Parent Partnership
+
                 </h3>
 
+
                 <p>
-                    Focus on strong academic
-                    foundations and learning.
+
+                    Working together with parents
+                    for every child's progress.
+
                 </p>
+
 
             </div>
 
@@ -1740,59 +2463,101 @@
 
             <div class="why-card">
 
+
                 <div class="why-icon">
+
+                    🎯
+
+                </div>
+
+
+                <h3>
+
+                    Individual Attention
+
+                </h3>
+
+
+                <p>
+
+                    Understanding students and
+                    supporting their individual
+                    learning needs.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="why-card">
+
+
+                <div class="why-icon">
+
                     ❤️
+
                 </div>
 
-                <h3>
-                    Strong Values
-                </h3>
-
-                <p>
-                    Character, discipline,
-                    respect and responsibility.
-                </p>
-
-            </div>
-
-
-
-            <div class="why-card">
-
-                <div class="why-icon">
-                    🌱
-                </div>
 
                 <h3>
-                    All-Round Growth
+
+                    Values & Discipline
+
                 </h3>
 
+
                 <p>
-                    Encouraging confidence,
-                    creativity and development.
+
+                    Education combined with good
+                    values, responsibility and
+                    discipline.
+
                 </p>
+
 
             </div>
 
 
         </div>
 
+
     </section>
 
 
 
-    <!-- =========================
-         ACHIEVEMENTS
-    ========================== -->
+    <!-- ACHIEVEMENTS -->
 
-    <section class="achievements"
-             id="achievements">
 
-        <h2 class="section-title">
-            Our Achievements
-        </h2>
+    <section
+        class="achievements"
+        id="achievements">
 
-        <div class="section-line"></div>
+
+        <div class="section-title">
+
+
+            <span>Achievements</span>
+
+
+            <h2>
+
+                Celebrating Student Success
+
+            </h2>
+
+
+            <p>
+
+                Every achievement motivates us to
+                work harder and dream bigger.
+
+            </p>
+
+
+        </div>
+
 
 
         <div class="achievement-grid">
@@ -1800,233 +2565,83 @@
 
             <div class="achievement-card">
 
-                <div class="number">
+
+                <div class="marks">
+
                     586/600
+
                 </div>
 
-                <p>
-                    Outstanding Academic Achievement
-                </p>
-
-            </div>
-
-
-
-            <div class="achievement-card">
-
-                <div class="number">
-                    535/600
-                </div>
-
-                <p>
-                    Excellent Student Performance
-                </p>
-
-            </div>
-
-
-
-            <div class="achievement-card">
-
-                <div class="number">
-                    🌟
-                </div>
-
-                <p>
-                    Committed to Continuous Growth
-                    and Academic Excellence
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         GALLERY
-    ========================== -->
-
-    <section class="gallery" id="gallery">
-
-        <h2 class="section-title">
-            School Gallery
-        </h2>
-
-        <div class="section-line"></div>
-
-
-        <div class="gallery-grid">
-
-
-            <div class="gallery-item">
-                🏫<br><br>
-                Our School Campus
-            </div>
-
-
-            <div class="gallery-item">
-                📚<br><br>
-                Learning Activities
-            </div>
-
-
-            <div class="gallery-item">
-                🏆<br><br>
-                Student Achievements
-            </div>
-
-
-            <div class="gallery-item">
-                🎉<br><br>
-                School Celebrations
-            </div>
-
-
-            <div class="gallery-item">
-                🧪<br><br>
-                Academic Activities
-            </div>
-
-
-            <div class="gallery-item">
-                ⚽<br><br>
-                Sports & Activities
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         ADMISSIONS
-    ========================== -->
-
-    <section class="admissions"
-             id="admissions">
-
-
-        <h2>
-            Admissions
-        </h2>
-
-
-        <p>
-
-            Give your child an opportunity to learn,
-            grow and build a strong foundation
-            for a successful future.
-
-        </p>
-
-
-        <a href="#contact"
-           class="admission-btn">
-
-            📝 Enquire About Admission
-
-        </a>
-
-
-    </section>
-
-
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section class="contact" id="contact">
-
-        <h2 class="section-title">
-            Contact Us
-        </h2>
-
-        <div class="section-line"></div>
-
-
-        <div class="contact-container">
-
-
-            <div class="contact-info">
 
                 <h3>
-                    Get In Touch
+
+                    Outstanding Performance
+
                 </h3>
 
 
-                <div class="contact-item">
+                <p>
 
-                    📍 <strong>Address</strong><br>
+                    One of our proud student
+                    achievements.
 
-                    Metturu,
-                    Kotturu Mandal,
-                    Srikakulam District,
-                    Andhra Pradesh
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    🏫 <strong>School</strong><br>
-
-                    Sri Sathya Sai School
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    📚 <strong>Classes</strong><br>
-
-                    Classes I to X
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    📧 <strong>Email</strong><br>
-
-                    Contact information will be updated soon.
-
-                </div>
+                </p>
 
 
             </div>
 
 
 
-            <div class="contact-form">
+            <div class="achievement-card">
 
 
-                <input
-                    type="text"
-                    placeholder="Your Name">
+                <div class="marks">
+
+                    535/600
+
+                </div>
 
 
-                <input
-                    type="tel"
-                    placeholder="Your Mobile Number">
+                <h3>
+
+                    Excellent Achievement
+
+                </h3>
 
 
-                <textarea
-                    placeholder="Your Message">
-                </textarea>
+                <p>
+
+                    A strong academic performance.
+
+                </p>
 
 
-                <button>
+            </div>
 
-                    Send Enquiry
 
-                </button>
+
+            <div class="achievement-card">
+
+
+                <div class="marks">
+
+                    448/600
+
+                </div>
+
+
+                <h3>
+
+                    Proud Achievement
+
+                </h3>
+
+
+                <p>
+
+                    Every student journey matters.
+
+                </p>
 
 
             </div>
@@ -2034,66 +2649,717 @@
 
         </div>
 
+
     </section>
 
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    <!-- FACILITIES -->
+
+
+    <section class="facilities">
+
+
+        <div class="section-title">
+
+
+            <span>Our School</span>
+
+
+            <h2>
+
+                A Better Environment For Learning
+
+            </h2>
+
+
+            <p>
+
+                Creating a safe, positive and
+                encouraging environment for
+                students.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="facility-grid">
+
+
+            <div class="facility">
+
+                <div class="facility-icon">
+
+                    🏫
+
+                </div>
+
+                <h3>
+
+                    Quality Learning Environment
+
+                </h3>
+
+            </div>
+
+
+
+            <div class="facility">
+
+                <div class="facility-icon">
+
+                    📚
+
+                </div>
+
+                <h3>
+
+                    Academic Support
+
+                </h3>
+
+            </div>
+
+
+
+            <div class="facility">
+
+                <div class="facility-icon">
+
+                    🧪
+
+                </div>
+
+                <h3>
+
+                    Science Learning
+
+                </h3>
+
+            </div>
+
+
+
+            <div class="facility">
+
+                <div class="facility-icon">
+
+                    ⚽
+
+                </div>
+
+                <h3>
+
+                    Sports & Activities
+
+                </h3>
+
+            </div>
+
+
+
+            <div class="facility">
+
+                <div class="facility-icon">
+
+                    🗣️
+
+                </div>
+
+                <h3>
+
+                    Communication Development
+
+                </h3>
+
+            </div>
+
+
+
+            <div class="facility">
+
+                <div class="facility-icon">
+
+                    🛡️
+
+                </div>
+
+                <h3>
+
+                    Safe & Caring Environment
+
+                </h3>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ADMISSION -->
+
+
+    <section
+        class="admission"
+        id="admissions">
+
+
+        <div class="admission-container">
+
+
+            <div class="admission-content">
+
+
+                <h2>
+
+                    Admissions Open
+
+                </h2>
+
+
+                <p>
+
+                    Give your child an opportunity
+                    to learn, grow and build a
+                    strong foundation for the
+                    future.
+
+                </p>
+
+
+                <ul class="admission-points">
+
+
+                    <li>
+                        Quality English Medium Education
+                    </li>
+
+
+                    <li>
+                        Focus on Academics & Values
+                    </li>
+
+
+                    <li>
+                        Special Foundation Programs
+                    </li>
+
+
+                    <li>
+                        Individual Student Attention
+                    </li>
+
+
+                    <li>
+                        Supportive Learning Environment
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+            <div class="form-box">
+
+
+                <h3>
+
+                    Admission Enquiry
+
+                </h3>
+
+
+                <form
+                    onsubmit="sendEnquiry(event)">
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            id="parentName"
+                            placeholder="Parent / Guardian Name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Mobile Number"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            id="studentName"
+                            placeholder="Student Name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <select
+                            id="class">
+
+                            <option>
+
+                                Select Class
+
+                            </option>
+
+                            <option>LKG</option>
+
+                            <option>UKG</option>
+
+                            <option>Class 1</option>
+
+                            <option>Class 2</option>
+
+                            <option>Class 3</option>
+
+                            <option>Class 4</option>
+
+                            <option>Class 5</option>
+
+                            <option>Class 6</option>
+
+                            <option>Class 7</option>
+
+                            <option>Class 8</option>
+
+                            <option>Class 9</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-btn">
+
+                        Send Enquiry
+
+                    </button>
+
+
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+
+    <section
+        id="contact">
+
+
+        <div class="section-title">
+
+
+            <span>Contact Us</span>
+
+
+            <h2>
+
+                Get In Touch With Us
+
+            </h2>
+
+
+            <p>
+
+                We are happy to answer your
+                questions regarding admissions
+                and our school.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-card">
+
+
+                <div class="contact-icon">
+
+                    📍
+
+                </div>
+
+
+                <h3>
+
+                    Address
+
+                </h3>
+
+
+                <p>
+
+                    Metturu<br>
+
+                    Kotturu Mandal<br>
+
+                    Srikakulam District<br>
+
+                    Andhra Pradesh
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="contact-card">
+
+
+                <div class="contact-icon">
+
+                    📞
+
+                </div>
+
+
+                <h3>
+
+                    Phone
+
+                </h3>
+
+
+                <p>
+
+                    Contact the School Office
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="contact-card">
+
+
+                <div class="contact-icon">
+
+                    ✉️
+
+                </div>
+
+
+                <h3>
+
+                    Admissions
+
+                </h3>
+
+
+                <p>
+
+                    Visit our School
+                    for admission enquiries.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
 
     <footer>
 
 
-        <p>
-
-            <strong>
-                SRI SATHYA SAI SCHOOL
-            </strong>
-
-        </p>
+        <div class="footer-grid">
 
 
-        <p>
-
-            Metturu • Kotturu Mandal •
-            Srikakulam District
-
-        </p>
+            <div class="footer-brand">
 
 
-        <p>
+                <h2>
 
-            Education • Values • Excellence
+                    🌸 Sri Sathya Sai School
 
-        </p>
-
-
-        <br>
+                </h2>
 
 
-        <p>
+                <p>
 
-            © 2026 Sri Sathya Sai School.
+                    Metturu — Building Knowledge,
+                    Character and Confidence.
+
+                    Together, we help students
+                    discover their potential and
+                    build a brighter future.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+
+                <ul>
+
+
+                    <li>
+
+                        <a href="#home">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="#about">
+
+                            About Us
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="#academics">
+
+                            Academics
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="#admissions">
+
+                            Admissions
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+
+                <h3>
+
+                    Programs
+
+                </h3>
+
+
+                <ul>
+
+
+                    <li>
+
+                        IIT-JEE Foundation
+
+                    </li>
+
+
+                    <li>
+
+                        NEET Foundation
+
+                    </li>
+
+
+                    <li>
+
+                        Navodaya Classes
+
+                    </li>
+
+
+                    <li>
+
+                        Olympiad Foundation
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="copyright">
+
+
+            © 2026 Sri Sathya Sai School,
+            Metturu.
+
             All Rights Reserved.
 
-        </p>
+            <br><br>
+
+            Building Knowledge • Character • Confidence
+
+        </div>
 
 
     </footer>
 
 
 
-    <!-- =========================
-         FLOATING CONTACT BUTTON
-    ========================== -->
+    <!-- WHATSAPP -->
 
-    <a href="#contact"
-       class="floating-button">
+
+    <a
+        href="https://wa.me/"
+        class="whatsapp"
+        title="Contact us on WhatsApp">
 
         💬
 
     </a>
+
+
+
+    <!-- JAVASCRIPT -->
+
+
+    <script>
+
+
+        function toggleMenu() {
+
+            document
+                .getElementById("navLinks")
+                .classList
+                .toggle("active");
+
+        }
+
+
+
+        function sendEnquiry(event) {
+
+            event.preventDefault();
+
+
+            const parentName =
+                document.getElementById("parentName").value;
+
+
+            const phone =
+                document.getElementById("phone").value;
+
+
+            const studentName =
+                document.getElementById("studentName").value;
+
+
+            const studentClass =
+                document.getElementById("class").value;
+
+
+            const message =
+
+                "Admission Enquiry%0A%0A" +
+
+                "Parent Name: " +
+                parentName +
+
+                "%0AStudent Name: " +
+                studentName +
+
+                "%0AClass: " +
+                studentClass +
+
+                "%0APhone: " +
+                phone;
+
+
+            alert(
+
+                "Thank you, " +
+                parentName +
+
+                "! Your admission enquiry has been recorded."
+
+            );
+
+        }
+
+
+    </script>
 
 
 </body>
